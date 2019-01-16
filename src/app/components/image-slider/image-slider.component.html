@@ -1,0 +1,11 @@
+<div class="image-slider-container">
+  <div class="slide-pane" [ngStyle]="{'transform': 'translateX(' + this.transulateX + 'px)'}">
+      <div class="thumb" *ngFor="let image of images">
+          <img [src]="image">
+        </div>
+  </div>
+</div>
+<nav>
+  <button (click)="handlePrev()">Prev</button>
+  <button (click)="handleNext()">Next</button>
+</nav>
